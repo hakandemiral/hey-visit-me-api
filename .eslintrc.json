@@ -11,5 +11,12 @@
         "sourceType": "module"
     },
     "rules": {
+        "indent": ["warn", 4],
+        "no-console": "off",
+        "no-trailing-spaces": "off",
+        "import/prefer-default-export": "off",
+        "no-unused-vars": "warn",
+        "import/extensions": "off",
+        "no-underscore-dangle": "allow"
     }
 }
