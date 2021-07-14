@@ -44,7 +44,7 @@ export default (type, data) => {
         break;
     case 'updateExperience':
         schema = yup.object().shape({
-            company: yup.string().max(50),
+            company: yup.string().max(120),
             currentlyWorking: yup.bool(),
             description: yup.string().max(1000),
             employmentType: yup.string(),
@@ -58,7 +58,7 @@ export default (type, data) => {
         break;
     case 'updateEducation':
         schema = yup.object().shape({
-            school: yup.string().max(50),
+            school: yup.string().max(120),
             department: yup.string().max(34),
             degree: yup.string().max(20),
             description: yup.string().max(1000),

@@ -137,7 +137,7 @@ export const newEducation = async (req, res) => {
     const userId = req.decoded.userId;
 
     try {
-        const user = await User.findOneAndUpdate(userId,
+        const user = await User.findOneAndUpdate({ _id: userId },
             { $push: { educations: { } } },
             { new: true }
         );
